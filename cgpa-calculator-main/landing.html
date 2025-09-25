@@ -1,147 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator for AMU</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="landing.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css ">
-    <link rel="stylesheet" href="landing.css">
-   
-</head>
+  <body>
+    <header class="header">
+      <a href="#"><img src="AMU.jpg" alt="AMU Logo" class="logo" /></a>
+      <h1>CGPA Calculator for AMU</h1>
+    </header>
 
-<body>
-    <div class="header">
-        <header>
-            <a href="#">
-        <img src="AMU.jpg" alt="Your Website Logo" class="logo">
-    </a>
-            <h1>CGPA calculator for AMU</h1>
-        </header>
-    </div>
     <div class="container">
-        
-        <a href="samp.html"> <button>Calculate CGPA</button></a>
+      <a href="samp.html"><button>Calculate CGPA</button></a>
     </div>
+
     <div class="containers">
-        <h1>CGPA CALCULATOR</h1><br>
-        <p>The CGPA (Cumulative Grade Point Average) calculator helps students calculate their overall academic performance.</p>
-        <br>
-        <h2>SECTION</h2>
-        <button id="showCgpaDefinition">What is CGPA?</button>
-        <div id="cgpaDefinition" class="section">
-            <h3>WHAT IS CGPA?</h3>
-            <p>CGPA stands for Cumulative Grade Point Average. It is a measure of a student's academic performance calculated by taking the average of grade points obtained in all subjects.</p>
-        </div>
+      <h1>CGPA CALCULATOR</h1>
 
-        <button id="showGradeTable">Marks and Letter Grades</button>
-        <div id="gradeTable" class="section">
-            <h3>Marks and Letter Grades</h3>
-            <table>
-                <tr>
-                    <th>Marks</th>
-                    <th>Letter Grade</th>
-                    <th>Mark Splitup</th>
-                </tr>
-                <tr>
-                    <td>90-100</td>
-                    <td>O</td>
-                    <td>10</td>
+      <p>
+        The CGPA (Cumulative Grade Point Average) calculator helps students
+        calculate their overall academic performance.
+      </p>
+      <br />
 
-                </tr>
-                <tr>
-                    <td>80-89</td>
-                    <td>A+</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>70-79</td>
-                    <td>A</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>60-69</td>
-                    <td>B+</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>55-59</td>
-                    <td>B</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>50-55</td>
-                    <td>C</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>45-49</td>
-                    <td>P</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>0-39</td>
-                    <td>U</td>
-                    <td>0</td>
-                </tr>
-            </table>
-        </div>
+      <button id="showCgpaDefinition">What is CGPA?</button>
+      <div id="cgpaDefinition" class="section">
+        <h3>WHAT IS CGPA?</h3>
+        <p>
+          CGPA stands for Cumulative Grade Point Average. It is a measure of a
+          student's academic performance calculated by taking the average of
+          grade points obtained in all subjects.
+        </p>
+      </div>
 
-        <button id="showCalculationMethod">How to Calculate CGPA?</button>
-        <div id="calculationMethod" class="section">
-            <h3>How to Calculate CGPA?</h3>
-            <p>To calculate CGPA, use the formula:</p>
-            <p>CGPA = (Total Grade Points Earned) / (Total Credits)</p>
-            <table border="1" cellpadding="8" cellspacing="0">
-    <tr>
-        <th>Subject</th>
-        <th>Grade</th>
-        <th>Credits</th>
-    </tr>
+      <button id="showGradeTable">Marks and Letter Grades</button>
+      <div id="gradeTable" class="section">
+        <h3>Marks and Letter Grades</h3>
+        <table>
+          <tr>
+            <th>Marks</th>
+            <th>Letter Grade</th>
+            <th>Mark Splitup</th>
+          </tr>
+          <tr>
+            <td>90-100</td>
+            <td>O</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>80-89</td>
+            <td>A+</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>70-79</td>
+            <td>A</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>60-69</td>
+            <td>B+</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>55-59</td>
+            <td>B</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>50-55</td>
+            <td>C</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>45-49</td>
+            <td>P</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>0-39</td>
+            <td>U</td>
+            <td>0</td>
+          </tr>
+        </table>
+      </div>
 
-    <!-- Semester 1 -->
-    <tr><td colspan="3"><b>Semester 1</b></td></tr>
-    <tr><td>DSA using C++</td><td>O</td><td>4</td></tr>
-    <tr><td>Database Management System</td><td>O</td><td>4</td></tr>
-    <tr><td>Digital Logic and Computer Architecture</td><td>O</td><td>4</td></tr>
-    <tr><td>Laboratory Course (C++)</td><td>O</td><td>4</td></tr>
-    <tr><td>Analysis and Design of Information System</td><td>O</td><td>4</td></tr>
-    <tr><td>Soft Skills</td><td>O</td><td>4</td></tr>
+      <button id="showCalculationMethod">How to Calculate CGPA?</button>
+      <div id="calculationMethod" class="section">
+        <h3>How to Calculate CGPA?</h3>
+        <p>CGPA = (Total Grade Points Earned) / (Total Credits)</p>
 
-    <!-- Semester 2 -->
-    <tr><td colspan="3"><b>Semester 2</b></td></tr>
-    <tr><td>OOPs using Java</td><td>O</td><td>4</td></tr>
-    <tr><td>Data Communication & Computer Network</td><td>O</td><td>4</td></tr>
-    <tr><td>Laboratory Course-2 (Java)</td><td>O</td><td>4</td></tr>
-    <tr><td>Statistics</td><td>O</td><td>4</td></tr>
-    <tr><td>E-Commerce</td><td>O</td><td>4</td></tr>
-    <tr><td>Web Development</td><td>O</td><td>4</td></tr>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+            <th>Credits</th>
+          </tr>
 
-    <!-- Semester 3 -->
-    <tr><td colspan="3"><b>Semester 3</b></td></tr>
-    <tr><td>Operating System</td><td>O</td><td>4</td></tr>
-    <tr><td>Software Engineering</td><td>O</td><td>4</td></tr>
-    <tr><td>Theory of Computation</td><td>O</td><td>4</td></tr>
-    <tr><td>Data Science using Python</td><td>O</td><td>4</td></tr>
-    <tr><td>Laboratory Course-3</td><td>O</td><td>4</td></tr>
-    <tr><td>Artificial Intelligence</td><td>O</td><td>4</td></tr>
-    <tr><td>Network Programming</td><td>O</td><td>4</td></tr>
+          <!-- Semester 1 -->
+          <tr>
+            <td colspan="3"><b>Semester 1</b></td>
+          </tr>
+          <tr>
+            <td>DSA using C++</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Database Management System</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Digital Logic and Computer Architecture</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Laboratory Course (C++)</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Analysis and Design of Information System</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Soft Skills</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
 
-    <!-- Semester 4 -->
-    <tr><td colspan="3"><b>Semester 4</b></td></tr>
-    <tr><td>Dissertation/Project</td><td>O</td><td>20</td></tr>
-</table>
+          <!-- Semester 2 -->
+          <tr>
+            <td colspan="3"><b>Semester 2</b></td>
+          </tr>
+          <tr>
+            <td>OOPs using Java</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Data Communication & Computer Network</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Laboratory Course-2 (Java)</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Statistics</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>E-Commerce</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Web Development</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
 
-        </div>
+          <!-- Semester 3 -->
+          <tr>
+            <td colspan="3"><b>Semester 3</b></td>
+          </tr>
+          <tr>
+            <td>Operating System</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Software Engineering</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Theory of Computation</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Data Science using Python</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Laboratory Course-3</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Artificial Intelligence</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Network Programming</td>
+            <td>O</td>
+            <td>4</td>
+          </tr>
 
-        <div id="thankYouMessage" class="section">
-            <h3>Thank You!</h3>
-            <p>Your CGPA will be calculated based on the grades you input.</p>
-        </div>
+          <!-- Semester 4 -->
+          <tr>
+            <td colspan="3"><b>Semester 4</b></td>
+          </tr>
+          <tr>
+            <td>Dissertation/Project</td>
+            <td>O</td>
+            <td>20</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="thankYouMessage" class="section">
+        <h3>Thank You!</h3>
+        <p>Your CGPA will be calculated based on the grades you input.</p>
+      </div>
     </div>
-    
-    <script src="landingpage.js">
-    </script>
-</body>
 
+    <script src="landingpage.js"></script>
+  </body>
 </html>
