@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel=" stylesheet " href="samp.css ">
+    <title>CGPA Calculator</title>
+    
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <div class="header">
+        <h1>CGPA Calculator</h1>
+    </div>
+    <div id='cgpa'>
+        <div id="semesters"></div>
+        <div id="overall-gpa-display">
+            GPA for Current Semester: N/A
+        </div>
+
+        <!-- Display overall CGPA -->
+        <div id="overall-cgpa-display">
+            Overall CGPA: N/A
+        </div>
+    </div>
+    <button onclick="addSemester()">Add Semester</button>
+    <button id="screenshot-button">Download</button>
+
+
+
+    <script src="mainpage.js">
+    </script>
+</body>
+
+</html>

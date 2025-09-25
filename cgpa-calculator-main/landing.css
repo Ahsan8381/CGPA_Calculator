@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+/* Global styles */
+* {
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+body {
+    background-color: white;
+    background-image: url('Cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh; /* Use min-height to ensure content fills the viewport on small screens */
+    position: relative;
+    padding-bottom: 80px; /* Add padding for the footer */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+    z-index: -1;
+}
+
+/* Header and Logo */
+.logo {
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+header {
+    background-color: #006E33;
+    color: white;
+    height: 95px;
+    padding: 0 20px; /* Use shorthand for padding */
+    display: flex;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto 60px; /* Use auto for horizontal centering */
+    text-align: center; /* Center text within the container for smaller screens */
+}
+
+.container h1 {
+    font-size: 60px;
+    margin-left: 40px;
+}
+
+.con {
+    margin-right: 50px;
+}
+
+.container button {
+    border: 1px solid #800000;
+    width: 150px;
+    height: 40px;
+    background-color: #800000;
+    color: white;
+    border-radius: 7px;
+    margin-right: 15px;
+}
+
+button:hover {
+    background-color: #8b0000;
+}
+
+.header h1 {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+p {
+    margin-left: 20px;
+}
+
+/* Table and Form Containers */
+.containers {
+    max-width: 800px;
+    width: 90%; /* Use a percentage for a fluid width */
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    display: block; /* Make the table responsive on small screens */
+    overflow-x: auto; /* Enable horizontal scrolling for the table */
+    white-space: nowrap; /* Prevent table content from wrapping */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #e9ecef;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    font-family: "Roboto", serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Stack sections on small screens */
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+.footer-section {
+    width: 100%; /* Full width on small screens */
+    padding: 20px 0;
+}
+
+.footer-section h1,
+.footer-section h2 {
+    font-family: "Roboto", serif;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    color: #ccc;
+    margin: 0 0 10px 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    font-family: "Roboto", serif;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.socials a {
+    color: #ccc;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .container h1 {
+        font-size: 40px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    .con {
+        margin-right: 0;
+    }
+
+    .container button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        height: 40px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .containers {
+        padding: 10px;
+        max-width: 95%; 
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,116 @@
+ @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+        * {
+            margin: 0%;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        .header {
+            background-color:#008000 ;
+            color: white;
+            margin-bottom: 50px;
+            height: 50px;
+            padding: 9px;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        .semester-container {
+            margin-bottom: 40px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #800000;
+            color: white;
+            border: 1px solid #800000;
+            border-radius: 4px;
+            margin: 15px;
+            margin-bottom: 50px;
+        }
+        
+        .input-container {
+            margin-bottom: 20px;
+        }
+        
+        .input-container input {
+            margin-right: 10px;
+        }
+        
+        select {
+            height: 30px;
+            width: 60px;
+            border: 1px solid grey;
+            border-radius: 2px;
+        }
+     
+        ul li a {
+            font-family: 'Roboto', sans-serif;
+        }
+/* Other CSS styles */
+
+@media (max-width: 768px) {
+    body {
+        width: 100vw; /* On smaller screens, use 100% of the viewport width */
+        height: auto; /* Allow the height to adjust to the content */
+    }
+
+    header {
+        height: auto;
+        padding: 10px; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Stack logo and other elements vertically */
+        text-align: center;
+    }
+
+    .logo {
+        height: 40px; /* Reduce logo size for mobile */
+        margin-right: 0;
+        margin-bottom: 10px; /* Add space below the logo */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .container h1 {
+        font-size: 40px; /* Smaller font for mobile */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 20px;
+    }
+    
+    .con {
+        margin-right: 0;
+    }
+
+    .container button {
+        width: 90%; /* Buttons take up more space */
+        margin: 5px auto; /* Center buttons and add spacing */
+    }
+
+    /* Adjust table styles for better mobile viewing */
+    table {
+        display: block; /* Allows horizontal scrolling within the table */
+        overflow-x: auto;
+        white-space: nowrap; /* Prevents text from wrapping */
+    }
+
+    th, td {
+        white-space: normal; /* Allow cell content to wrap if necessary */
+    }
+}
