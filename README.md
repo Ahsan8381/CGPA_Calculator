@@ -17,8 +17,14 @@ Here are some screenshots of the application in action.
 
 **Desktop View**
 
+<img width="1363" height="641" alt="image" src="https://github.com/user-attachments/assets/b336d787-0eb5-433c-aeff-444a5ea81143" />
+<img width="1338" height="628" alt="image" src="https://github.com/user-attachments/assets/7255113f-5802-49b5-a053-6b17aec51a5b" />
+
 
 **Mobile View**
+
+<img width="315" height="554" alt="image" src="https://github.com/user-attachments/assets/1e6c8dad-cbed-4914-9a82-43a7c3347287" />
+<img width="317" height="559" alt="image" src="https://github.com/user-attachments/assets/df9dcf44-8f91-4970-a29f-fbbc82590ec5" />
 
 
 ### Technologies Used
