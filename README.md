@@ -1,9 +1,3 @@
-I can add a section for screenshots to the README. It's a great idea as it provides a visual representation of your project, which helps users understand what the application looks like and what it does without having to run the code.
-
-Here is the updated README with a new "Screenshots" section.
-
------
-
 ## CGPA Calculator
 
 This is a web-based Cumulative Grade Point Average (CGPA) calculator built with HTML, CSS, and JavaScript. It allows students to input their grades and credits for each semester to accurately calculate their Semester GPA and overall CGPA. The application is responsive, providing a seamless experience on both desktop and mobile devices.
