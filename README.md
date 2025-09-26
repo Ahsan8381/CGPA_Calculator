@@ -1,6 +1,10 @@
 ## CGPA Calculator
 
 This is a web-based Cumulative Grade Point Average (CGPA) calculator built with HTML, CSS, and JavaScript. It allows students to input their grades and credits for each semester to accurately calculate their Semester GPA and overall CGPA. The application is responsive, providing a seamless experience on both desktop and mobile devices.
+## Live Demo
+
+Check out the live CGPA Calculator here: [Live Demo](https://ahsan8381.github.io/CGPA_Calculator/)
+
 
 ### Features
 
